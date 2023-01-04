@@ -15,7 +15,14 @@
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  margin: 0;
+}
+
 a {
+  text-decoration: none;
+}
+/* a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
@@ -26,6 +33,7 @@ a:hover {
 
 body {
   margin: 0;
+  min-width: 320px;
   min-height: 100vh;
 }
 
@@ -65,4 +73,17 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+
+/* Brand */
+.brand-icon__button.MuiButton-root:hover {
+  background-color: transparent;
+}
+
+/* Navigation Header */
+.nav-menu__item.MuiButton-root:hover,
+.nav-menu__item.MuiButton-root:active,
+.nav-menu__item.active {
+  background-color: transparent;
+  color: #3252df;
 }
