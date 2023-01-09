@@ -1,19 +1,23 @@
-import { Button, Typography } from '@mui/material';
+import { Box, Button, Typography } from '@mui/material';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 function BrandIcon() {
   return (
     <Link to="/">
-      <Button className="brand-icon__button" variant="text">
+      <Button sx={{ px: 0 }} className="brand-icon__button" variant="text">
         <Typography
+          color="primary"
           variant="body2"
           sx={{ fontFamily: 'Poppins, sans-serif' }}
           fontSize="1.625rem"
-          color="#3252DF"
           textTransform="none"
+          fontWeight={500}
         >
-          Stay<span style={{ color: '#152C5B' }}>cation.</span>
+          Stay
+          <Box component="span" color="secondary.main">
+            cation.
+          </Box>
         </Typography>
       </Button>
     </Link>

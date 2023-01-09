@@ -12,6 +12,7 @@ function Header() {
         <Box sx={{ flexGrow: 1, py: 1 }}>
           <Toolbar
             sx={{
+              px: { xs: 0, md: 0 },
               backgroundColor: 'transparent',
               boxShadow: 'none',
               flexDirection: 'row',
