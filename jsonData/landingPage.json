@@ -58,11 +58,11 @@
   ],
   "categories": [
     {
-      "_id": "asd1293uasdads1",
+      "_id": "casd1293uasdads1",
       "name": "House with beauty backyard",
       "items": [
         {
-          "_id": "asd1293uasdads1",
+          "_id": "ciasd1293uasdads1",
           "name": "PSW Antasari",
           "imageUrl": "/images/image-category-1.jpg",
           "country": "South Korea",
@@ -70,7 +70,7 @@
           "isPopular": true
         },
         {
-          "_id": "asd1293uasdads1",
+          "_id": "ciasd1293uasdads2",
           "name": "Kuretakeso",
           "imageUrl": "/images/image-category-2.jpg",
           "country": "South Korea",
@@ -78,7 +78,7 @@
           "isPopular": false
         },
         {
-          "_id": "asd1293uasdads1",
+          "_id": "ciasd1293uasdads3",
           "name": "Arya Duta",
           "imageUrl": "/images/image-category-3.jpg",
           "country": "South Korea",
@@ -86,7 +86,7 @@
           "isPopular": false
         },
         {
-          "_id": "asd1293uasdads1",
+          "_id": "ciasd1293uasdads4",
           "name": "Grand Dhika",
           "imageUrl": "/images/image-category-4.jpg",
           "country": "South Korea",
@@ -96,37 +96,37 @@
       ]
     },
     {
-      "_id": "asd1293uasdads1",
+      "_id": "casd1293uasdads2",
       "name": "Hotels with large living room",
       "items": [
         {
-          "_id": "asd1293uasdads1",
+          "_id": "ciasd1293uasdads1",
           "name": "PSW Antasari",
-          "imageUrl": "/images/image-category-5.jpg",
+          "imageUrl": "/images/image-category-1.jpg",
           "country": "South Korea",
           "city": "Seoul Flore",
           "isPopular": false
         },
         {
-          "_id": "asd1293uasdads1",
+          "_id": "ciasd1293uasdads2",
           "name": "Kuretakeso",
-          "imageUrl": "/images/image-category-6.jpg",
+          "imageUrl": "/images/image-category-2.jpg",
           "country": "South Korea",
           "city": "Seoul Flore",
           "isPopular": false
         },
         {
-          "_id": "asd1293uasdads1",
+          "_id": "ciasd1293uasdads3",
           "name": "Arya Duta",
-          "imageUrl": "/images/image-category-7.jpg",
+          "imageUrl": "/images/image-category-3.jpg",
           "country": "South Korea",
           "city": "Seoul Flore",
           "isPopular": false
         },
         {
-          "_id": "asd1293uasdads1",
+          "_id": "ciasd1293uasdads4",
           "name": "Grand Dhika",
-          "imageUrl": "/images/image-category-8.jpg",
+          "imageUrl": "/images/image-category-4.jpg",
           "country": "South Korea",
           "city": "Seoul Flore",
           "isPopular": true
@@ -134,37 +134,37 @@
       ]
     },
     {
-      "_id": "asd1293uasdads1",
+      "_id": "casd1293uasdads3",
       "name": "Apartments with kitchen set",
       "items": [
         {
-          "_id": "asd1293uasdads1",
+          "_id": "ciasd1293uasdads1",
           "name": "PSW Antasari",
-          "imageUrl": "/images/image-category-9.jpg",
+          "imageUrl": "/images/image-category-1.jpg",
           "country": "South Korea",
           "city": "Seoul Flore",
           "isPopular": false
         },
         {
-          "_id": "asd1293uasdads1",
+          "_id": "ciasd1293uasdads2",
           "name": "Kuretakeso",
-          "imageUrl": "/images/image-category-10.jpg",
+          "imageUrl": "/images/image-category-2.jpg",
           "country": "South Korea",
           "city": "Seoul Flore",
           "isPopular": false
         },
         {
-          "_id": "asd1293uasdads1",
+          "_id": "ciasd1293uasdads3",
           "name": "Arya Duta",
-          "imageUrl": "/images/image-category-11.jpg",
+          "imageUrl": "/images/image-category-3.jpg",
           "country": "South Korea",
           "city": "Seoul Flore",
           "isPopular": true
         },
         {
-          "_id": "asd1293uasdads1",
+          "_id": "ciasd1293uasdads4",
           "name": "Grand Dhika",
-          "imageUrl": "/images/image-category-12.jpg",
+          "imageUrl": "/images/image-category-4.jpg",
           "country": "South Korea",
           "city": "Seoul Flore",
           "isPopular": false

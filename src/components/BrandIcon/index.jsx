@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function BrandIcon() {
   return (
     <Link to="/">
-      <Button sx={{ px: 0 }} className="brand-icon__button" variant="text">
+      <Button sx={{ p: 0 }} className="brand-icon__button" variant="text">
         <Typography
           color="primary"
           variant="body2"

@@ -1,15 +1,20 @@
-import { Box, Button, Container, Divider, Toolbar } from '@mui/material';
-import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { AppBar, Box, Container, Divider, IconButton, Toolbar, useMediaQuery, useTheme } from '@mui/material';
+import React, { useState } from 'react';
 import BrandIcon from '../BrandIcon';
+import { DragHandle } from '@mui/icons-material';
+import DrawerComponent from './Drawer';
+import ListComponent from './ListComponent';
+import { Fade } from 'react-awesome-reveal';
 
 function Header() {
-  const location = useLocation();
+  const theme = useTheme();
+  const [openDrawer, setOpenDrawer] = useState(false);
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
     <>
-      <Container component="header" sx={{ position: 'relative' }}>
-        <Box sx={{ flexGrow: 1, py: 1 }}>
+      <Container>
+        <AppBar sx={{ py: 1, bgcolor: 'transparent', position: 'static', boxShadow: 'none' }}>
           <Toolbar
             sx={{
               px: { xs: 0, md: 0 },
@@ -20,71 +25,33 @@ function Header() {
               justifyContent: 'space-between',
             }}
           >
-            <BrandIcon />
-            <Box sx={{ display: 'flex', alignItems: 'center' }}>
-              <Link to="/">
-                <Button
-                  variant="text"
-                  className={`nav-menu__item ${location.pathname === '/' ? 'active' : ''}`}
-                  sx={{
-                    textTransform: 'none',
-                    fontFamily: 'Poppins, sans-serif',
-                    fontWeight: 400,
-                    color: '#152C5B',
-                    fontSize: '1rem',
-                  }}
-                >
-                  Home
-                </Button>
-              </Link>
-              <Link to="/browse">
-                <Button
-                  variant="text"
-                  className={`nav-menu__item ${location.pathname === '/browse' ? 'active' : ''}`}
-                  sx={{
-                    textTransform: 'none',
-                    fontFamily: 'Poppins, sans-serif',
-                    fontWeight: 400,
-                    color: '#152C5B',
-                    fontSize: '1rem',
-                  }}
-                >
-                  Browse by
-                </Button>
-              </Link>
-              <Link to="/stories">
-                <Button
-                  variant="text"
-                  className={`nav-menu__item ${location.pathname === '/stories' ? 'active' : ''}`}
-                  sx={{
-                    textTransform: 'none',
-                    fontFamily: 'Poppins, sans-serif',
-                    fontWeight: 400,
-                    color: '#152C5B',
-                    fontSize: '1rem',
-                  }}
-                >
-                  Stories
-                </Button>
-              </Link>
-              <Link to="/agents">
-                <Button
-                  variant="text"
-                  className={`nav-menu__item ${location.pathname === '/agents' ? 'active' : ''}`}
-                  sx={{
-                    textTransform: 'none',
-                    fontFamily: 'Poppins, sans-serif',
-                    fontWeight: 400,
-                    color: '#152C5B',
-                    fontSize: '1rem',
-                  }}
-                >
-                  Agents
-                </Button>
-              </Link>
-            </Box>
+            <Fade triggerOnce>
+              <Box>
+                <BrandIcon />
+              </Box>
+            </Fade>
+            <Fade delay={200} triggerOnce>
+              <IconButton
+                edge="start"
+                color="primary"
+                sx={{ display: { xs: 'block', md: 'none' } }}
+                aria-label="open drawer"
+                onClick={() => setOpenDrawer(true)}
+              >
+                <DragHandle />
+              </IconButton>
+            </Fade>
+            {isMobile ? (
+              <DrawerComponent
+                onOpen={() => setOpenDrawer(true)}
+                open={openDrawer}
+                onClose={() => setOpenDrawer(false)}
+              />
+            ) : (
+              <ListComponent />
+            )}
           </Toolbar>
-        </Box>
+        </AppBar>
       </Container>
       <Divider />
     </>
