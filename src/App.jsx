@@ -1,5 +1,5 @@
-import React from 'react';
 import { ThemeProvider } from '@mui/material/styles';
+import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import LandingPage from './pages/LandingPage';

@@ -8,8 +8,8 @@ function FeatureItem(props) {
     <Link to={`/${type.toLowerCase()}/d/${_id}`}>
       <Box className="card card-featured">
         <Box className="tag">
-          <Typography variant="body2" color="#fff" fontFamily="Poppins, sans-serif">
-            <Box component="span" fontSize="1rem" fontWeight={500}>
+          <Typography variant="body2" className="font-base color-white">
+            <Box component="span" fontWeight={500}>
               ${price}{' '}
             </Box>
             per {unit}
@@ -19,10 +19,8 @@ function FeatureItem(props) {
           <img src={imageUrl} alt={name} className="img-cover" />
         </figure>
         <Box className="meta-wrapper">
-          <Typography fontFamily="Poppins" fontWeight={400} fontSize="1.25rem" variant="h5" color="#fff">
-            {name}
-          </Typography>
-          <Box component="span" fontFamily="Poppins">
+          <Typography className="font-base font-weight-normal font-20 color-white">{name}</Typography>
+          <Box component="span">
             {city}, {country}
           </Box>
         </Box>

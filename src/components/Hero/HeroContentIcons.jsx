@@ -5,30 +5,30 @@ import commafy from '../../utils/digitGroup';
 function HeroContentIcons(props) {
   const { data } = props;
   return (
-    <Box className="hero-content__icons" component="div" sx={{ display: 'flex', alignItems: 'center', gap: '50px' }}>
-      <Box fontFamily="Poppins, sans-serif" fontWeight={500} sx={{ textAlign: { xs: 'center', md: 'left' } }}>
+    <Box className="hero-content__icons-container" component="div">
+      <Box className="hero-content__icons-content">
         <img src="/images/icons/ic_traveler.svg" width={32} height={32} />
-        <Box component="p" color="secondary.main" sx={{ marginBlockStart: '10px', marginBlockEnd: 0 }}>
+        <Box className="hero-content__icons-text color-primary" component="p">
           {commafy(data.travelers)}{' '}
-          <Box component="span" color="#b0b0b0" fontWeight={300}>
+          <Box className="hero-content__icons-span color-text" component="span">
             travelers
           </Box>
         </Box>
       </Box>
-      <Box fontFamily="Poppins, sans-serif" fontWeight={500} sx={{ textAlign: { xs: 'center', md: 'left' } }}>
+      <Box className="hero-content__icons-content">
         <img src="/images/icons/icon-treasure.svg" width={32} height={32} />
-        <Box component="p" color="secondary.main" sx={{ marginBlockStart: '10px', marginBlockEnd: 0 }}>
+        <Box className="hero-content__icons-text color-primary" component="p">
           {commafy(data.treasures)}{' '}
-          <Box component="span" color="#b0b0b0" fontWeight={300}>
+          <Box className="hero-content__icons-span color-text" component="span">
             treasures
           </Box>
         </Box>
       </Box>
-      <Box fontFamily="Poppins, sans-serif" fontWeight={500} sx={{ textAlign: { xs: 'center', md: 'left' } }}>
+      <Box className="hero-content__icons-content">
         <img src="/images/icons/ic_location.svg" width={32} height={32} />
-        <Box component="p" color="secondary.main" sx={{ marginBlockStart: '10px', marginBlockEnd: 0 }}>
+        <Box className="hero-content__icons-text color-primary" component="p">
           {commafy(data.cities)}{' '}
-          <Box component="span" color="#b0b0b0" fontWeight={300}>
+          <Box className="hero-content__icons-span color-text" component="span">
             cities
           </Box>
         </Box>

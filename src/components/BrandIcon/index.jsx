@@ -7,15 +7,12 @@ function BrandIcon() {
     <Link to="/">
       <Button sx={{ p: 0 }} className="brand-icon__button" variant="text">
         <Typography
-          color="primary"
-          variant="body2"
-          sx={{ fontFamily: 'Poppins, sans-serif' }}
-          fontSize="1.625rem"
+          variant="h4"
+          className="font-base font-26 font-weight-semibold color-secondary"
           textTransform="none"
-          fontWeight={500}
         >
           Stay
-          <Box component="span" color="secondary.main">
+          <Box component="span" className="color-primary">
             cation.
           </Box>
         </Typography>

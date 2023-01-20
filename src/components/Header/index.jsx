@@ -1,10 +1,10 @@
+import { DragHandle } from '@mui/icons-material';
 import { AppBar, Box, Container, Divider, IconButton, Toolbar, useMediaQuery, useTheme } from '@mui/material';
 import React, { useState } from 'react';
+import { Fade } from 'react-awesome-reveal';
 import BrandIcon from '../BrandIcon';
-import { DragHandle } from '@mui/icons-material';
 import DrawerComponent from './Drawer';
 import ListComponent from './ListComponent';
-import { Fade } from 'react-awesome-reveal';
 
 function Header() {
   const theme = useTheme();
@@ -14,17 +14,8 @@ function Header() {
   return (
     <>
       <Container>
-        <AppBar sx={{ py: 1, bgcolor: 'transparent', position: 'static', boxShadow: 'none' }}>
-          <Toolbar
-            sx={{
-              px: { xs: 0, md: 0 },
-              backgroundColor: 'transparent',
-              boxShadow: 'none',
-              flexDirection: 'row',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-            }}
-          >
+        <AppBar className="header-container">
+          <Toolbar className="toolbar">
             <Fade triggerOnce>
               <Box>
                 <BrandIcon />

@@ -1,0 +1,22 @@
+/* Utilities */
+.container-grid {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+@media screen and (min-width: 900px) {
+  .container-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .column-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

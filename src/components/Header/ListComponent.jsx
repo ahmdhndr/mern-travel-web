@@ -8,71 +8,55 @@ function ListComponent() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   return (
-    <Box sx={{ width: { xs: 250, md: 'auto' } }}>
-      <List sx={{ display: { xs: 'block', md: 'flex' }, alignItems: 'center' }}>
+    <Box className="navigation">
+      <List className="navigation__menu-list">
         <Fade delay={100} cascade damping={0.3} triggerOnce>
-          <ListItem disablePadding={!isMobile} sx={{ width: 'auto' }}>
+          <ListItem disablePadding={!isMobile}>
             <Link to="/">
               <Button
                 variant="text"
-                className={`nav-menu__item ${location.pathname === '/' ? 'active' : ''}`}
+                className={`nav-menu__item color-primary ${location.pathname === '/' ? 'active' : ''}`}
                 sx={{
                   textTransform: 'none',
-                  fontFamily: 'Poppins, sans-serif',
-                  fontWeight: 400,
-                  color: '#152C5B',
-                  fontSize: '1rem',
                 }}
               >
                 Home
               </Button>
             </Link>
           </ListItem>
-          <ListItem disablePadding={!isMobile} sx={{ width: 'auto' }}>
+          <ListItem disablePadding={!isMobile}>
             <Link to="/browse">
               <Button
                 variant="text"
-                className={`nav-menu__item ${location.pathname === '/browse' ? 'active' : ''}`}
+                className={`nav-menu__item color-primary ${location.pathname === '/browse' ? 'active' : ''}`}
                 sx={{
                   textTransform: 'none',
-                  fontFamily: 'Poppins, sans-serif',
-                  fontWeight: 400,
-                  color: '#152C5B',
-                  fontSize: '1rem',
                 }}
               >
                 Browse By
               </Button>
             </Link>
           </ListItem>
-          <ListItem disablePadding={!isMobile} sx={{ width: 'auto' }}>
+          <ListItem disablePadding={!isMobile}>
             <Link to="/stories">
               <Button
                 variant="text"
-                className={`nav-menu__item ${location.pathname === '/stories' ? 'active' : ''}`}
+                className={`nav-menu__item color-primary ${location.pathname === '/stories' ? 'active' : ''}`}
                 sx={{
                   textTransform: 'none',
-                  fontFamily: 'Poppins, sans-serif',
-                  fontWeight: 400,
-                  color: '#152C5B',
-                  fontSize: '1rem',
                 }}
               >
                 Stories
               </Button>
             </Link>
           </ListItem>
-          <ListItem disablePadding={!isMobile} sx={{ width: 'auto' }}>
+          <ListItem disablePadding={!isMobile}>
             <Link to="/agents">
               <Button
                 variant="text"
-                className={`nav-menu__item ${location.pathname === '/agents' ? 'active' : ''}`}
+                className={`nav-menu__item color-primary ${location.pathname === '/agents' ? 'active' : ''}`}
                 sx={{
                   textTransform: 'none',
-                  fontFamily: 'Poppins, sans-serif',
-                  fontWeight: 400,
-                  color: '#152C5B',
-                  fontSize: '1rem',
                 }}
               >
                 Agents

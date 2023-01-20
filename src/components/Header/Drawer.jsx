@@ -1,4 +1,4 @@
-import { Drawer, SwipeableDrawer } from '@mui/material';
+import { SwipeableDrawer } from '@mui/material';
 import React from 'react';
 import ListComponent from './ListComponent';
 

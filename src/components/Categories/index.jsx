@@ -13,15 +13,7 @@ function Categories(props) {
       sx={{ mb: { xs: '30px', md: '50px' } }}
     >
       <Fade triggerOnce delay={300}>
-        <Typography
-          className="category__title"
-          variant="h4"
-          fontFamily="poppins"
-          fontSize="1.5rem"
-          fontWeight={500}
-          color="secondary.main"
-          mb="20px"
-        >
+        <Typography className="font-base font-24 font-weight-semibold color-primary" variant="h4" mb="20px">
           {category.name}
         </Typography>
       </Fade>

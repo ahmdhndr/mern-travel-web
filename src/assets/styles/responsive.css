@@ -1,0 +1,18 @@
+@media only screen and (min-width: 1200px) {
+  /* Hero */
+  .MuiBox-root.hero-thumb__frame {
+    right: 0px;
+  }
+  .MuiBox-root.hero-thumb__image {
+    right: 40px;
+    height: auto;
+  }
+
+  /* Testimony */
+  .MuiBox-root.testimony-thumb__frame {
+    left: 0;
+  }
+  .MuiBox-root.testimony-thumb__image {
+    left: 40px;
+  }
+}

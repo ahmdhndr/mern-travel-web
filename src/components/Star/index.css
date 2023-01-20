@@ -1,7 +1,16 @@
 .stars {
   position: relative;
+  left: 50%;
+  transform: translateX(-43%);
   min-width: 200px;
   display: inline-flex;
+}
+
+@media screen and (min-width: 900px) {
+  .stars {
+    left: 0%;
+    transform: translateX(0%);
+  }
 }
 
 .stars .star {

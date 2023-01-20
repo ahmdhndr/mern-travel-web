@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import { Box } from '@mui/material';
+import PropTypes from 'prop-types';
+import React from 'react';
 
 import './index.css';
 
@@ -56,15 +56,7 @@ function Star(props) {
   }
 
   return (
-    <Box
-      sx={{
-        position: 'relative',
-        left: { xs: '50%', md: '0' },
-        transform: { xs: 'translateX(-43%)', md: 'translateX(0)' },
-      }}
-      className={['stars', className].join('')}
-      style={{ height }}
-    >
+    <Box className={['stars', className].join('')} style={{ height }}>
       {starPlaceholder}
       {stars}
     </Box>

@@ -1,0 +1,39 @@
+/* MuiTypography Utilites */
+.MuiTypography-root.font-base {
+  font-family: 'Poppins', sans-serif;
+  font-weight: var(--font-weight-300);
+  font-size: var(--font-size-16);
+}
+.MuiTypography-root.font-weight-light {
+  font-weight: var(--font-weight-300);
+}
+.MuiTypography-root.font-weight-normal {
+  font-weight: var(--font-weight-400);
+}
+.MuiTypography-root.font-weight-semibold {
+  font-weight: var(--font-weight-500);
+}
+.MuiTypography-root.font-weight-bold {
+  font-weight: var(--font-weight-700);
+}
+.MuiTypography-root.font-18 {
+  font-size: var(--font-size-18);
+}
+.MuiTypography-root.font-20 {
+  font-size: var(--font-size-20);
+}
+.MuiTypography-root.font-24 {
+  font-size: var(--font-size-24);
+}
+.MuiTypography-root.font-26 {
+  font-size: var(--font-size-26);
+}
+.MuiTypography-root.font-32 {
+  font-size: var(--font-size-32);
+}
+.MuiTypography-root.font-36 {
+  font-size: var(--font-size-36);
+}
+.MuiTypography-root.font-42 {
+  font-size: var(--font-size-42);
+}
