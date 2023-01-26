@@ -1,0 +1,48 @@
+.input-number {
+  margin-bottom: 24px;
+}
+
+.input-number .input-group {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  background: #f5f6f8;
+  display: flex;
+  border: 4px;
+}
+.input-number .input-group .input-group-text {
+  border-radius: 4px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  color: var(--clr-white);
+  font-family: var(--font-base);
+  font-size: var(--font-size-24);
+  font-weight: var(--font-weight-700);
+}
+.input-number .input-group .input-group-text.minus {
+  background: var(--clr-red);
+}
+.input-number .input-group .input-group-text.plus {
+  background: var(--clr-green);
+}
+
+.input-number .input-group .MuiInputBase-root.MuiInput-root.form-control .MuiInputBase-input.MuiInput-input {
+  min-height: 45px;
+  font-family: var(--font-base);
+  font-weight: var(--font-weight-400);
+  padding: 0;
+  text-align: center;
+  background: #f5f6f8;
+}
+
+.input-number .input-group .MuiInputBase-root.MuiInput-root.form-control:before,
+.input-number .input-group .MuiInputBase-root.MuiInput-root:after,
+.input-number .input-group .MuiInputBase-root.MuiInput-root:hover:before {
+  border: none;
+}

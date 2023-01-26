@@ -3,10 +3,10 @@ import React from 'react';
 import { Fade } from 'react-awesome-reveal';
 import { Link, useLocation } from 'react-router-dom';
 
-function ListComponent() {
+export default function ListComponent() {
   const location = useLocation();
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   return (
     <Box className="navigation">
       <List className="navigation__menu-list">
@@ -68,5 +68,3 @@ function ListComponent() {
     </Box>
   );
 }
-
-export default ListComponent;

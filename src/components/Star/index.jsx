@@ -4,7 +4,7 @@ import React from 'react';
 
 import './index.css';
 
-function Star(props) {
+export default function Star(props) {
   const { className, value, width, height, spacing } = props;
   const decimals = Number(value) % 1;
   const stars = [];
@@ -70,5 +70,3 @@ Star.propTypes = {
   height: PropTypes.number,
   spacing: PropTypes.number,
 };
-
-export default Star;

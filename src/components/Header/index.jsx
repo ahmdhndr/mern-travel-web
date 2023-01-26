@@ -1,15 +1,15 @@
 import { DragHandle } from '@mui/icons-material';
 import { AppBar, Box, Container, Divider, IconButton, Toolbar, useMediaQuery, useTheme } from '@mui/material';
 import React, { useState } from 'react';
-import { Fade } from 'react-awesome-reveal';
+import { Fade, Slide } from 'react-awesome-reveal';
 import BrandIcon from '../BrandIcon';
 import DrawerComponent from './Drawer';
 import ListComponent from './ListComponent';
 
-function Header() {
+export default function Header() {
   const theme = useTheme();
   const [openDrawer, setOpenDrawer] = useState(false);
-  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
     <>
@@ -25,7 +25,7 @@ function Header() {
               <IconButton
                 edge="start"
                 color="primary"
-                sx={{ display: { xs: 'block', md: 'none' } }}
+                sx={{ display: { xs: 'block', sm: 'none' } }}
                 aria-label="open drawer"
                 onClick={() => setOpenDrawer(true)}
               >
@@ -44,9 +44,9 @@ function Header() {
           </Toolbar>
         </AppBar>
       </Container>
-      <Divider />
+      <Slide triggerOnce>
+        <Divider />
+      </Slide>
     </>
   );
 }
-
-export default Header;

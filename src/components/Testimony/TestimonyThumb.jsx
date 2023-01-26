@@ -2,7 +2,7 @@ import { Box } from '@mui/material';
 import React from 'react';
 import { Slide } from 'react-awesome-reveal';
 
-function TestimonyThumb(props) {
+export default function TestimonyThumb(props) {
   const { imageUrl } = props;
   return (
     <Box className="testimony-thumb__container">
@@ -19,5 +19,3 @@ function TestimonyThumb(props) {
     </Box>
   );
 }
-
-export default TestimonyThumb;

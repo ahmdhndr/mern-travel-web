@@ -32,4 +32,13 @@ export const theme = createTheme({
     // E.g., shift from Red 500 to Red 300 or Red 700.
     tonalOffset: 0.2,
   },
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 768,
+      md: 900,
+      lg: 1200,
+      xl: 1536
+    }
+  },
 });

@@ -1,0 +1,52 @@
+.input-date {
+  margin-bottom: 24px;
+}
+
+.input-date .input-group {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+
+.input-date .input-group .input-group-text {
+  width: 45px;
+  height: 45px;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  z-index: 999;
+  position: absolute;
+}
+
+.input-date .input-group .date-range-wrapper {
+  padding: 4px;
+  background: var(--clr-white);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  border-radius: 4px;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+
+.input-date .input-group .MuiInputBase-root.MuiInput-root.form-control .MuiInputBase-input.MuiInput-input {
+  min-height: 45px;
+  font-family: var(--font-base);
+  font-weight: var(--font-weight-400);
+  padding: 0;
+  text-align: center;
+  background: #f5f6f8;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input-date .input-group .MuiInputBase-root.MuiInput-root.form-control:before,
+.input-date .input-group .MuiInputBase-root.MuiInput-root:after,
+.input-date .input-group .MuiInputBase-root.MuiInput-root:hover:before {
+  border: none;
+}

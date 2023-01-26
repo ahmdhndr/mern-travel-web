@@ -4,7 +4,7 @@ import { Fade } from 'react-awesome-reveal';
 import Button from '../Buttons';
 import HeroContentIcons from './HeroContentIcons';
 
-function HeroContent(props) {
+export default function HeroContent(props) {
   const { data, refMostPicked } = props;
 
   const showMostPicked = () => {
@@ -20,7 +20,7 @@ function HeroContent(props) {
         <Typography
           variant="h3"
           className="font-base font-42 font-weight-bold color-primary"
-          sx={{ textAlign: { xs: 'center', md: 'left' } }}
+          sx={{ textAlign: { xs: 'center', sm: 'left' } }}
         >
           Forget Busy Work, <br />
           Start Next Vacation
@@ -29,10 +29,10 @@ function HeroContent(props) {
           variant="body2"
           className="font-base color-text"
           sx={{
-            textAlign: { xs: 'center', md: 'left' },
+            textAlign: { xs: 'center', sm: 'left' },
             maxWidth: '340px',
             lineHeight: 'normal',
-            mx: { xs: 'auto', md: 0 },
+            mx: { xs: 'auto', sm: 0 },
             mt: '20px',
             mb: '30px',
           }}
@@ -45,5 +45,3 @@ function HeroContent(props) {
     </Box>
   );
 }
-
-export default HeroContent;

@@ -4,7 +4,7 @@ import { Slide } from 'react-awesome-reveal';
 import Button from '../Buttons';
 import Star from '../Star';
 
-function TestimonyContent(props) {
+export default function TestimonyContent(props) {
   const { data } = props;
 
   return (
@@ -15,7 +15,7 @@ function TestimonyContent(props) {
           className="font-base font-weight-semibold font-24 color-primary"
           sx={{
             lineHeight: 1.5,
-            textAlign: { xs: 'center', md: 'left' },
+            textAlign: { xs: 'center', sm: 'left' },
             mb: '40px',
           }}
         >
@@ -27,7 +27,7 @@ function TestimonyContent(props) {
           className="font-base font-weight-normal font-32 color-primary"
           sx={{
             lineHeight: 1.5,
-            textAlign: { xs: 'center', md: 'left' },
+            textAlign: { xs: 'center', sm: 'left' },
             my: 1,
           }}
         >
@@ -37,7 +37,7 @@ function TestimonyContent(props) {
           variant="body2"
           className="font-base color-text font-18"
           sx={{
-            textAlign: { xs: 'center', md: 'left' },
+            textAlign: { xs: 'center', sm: 'left' },
             lineHeight: 'normal',
             mb: '50px',
           }}
@@ -53,5 +53,3 @@ function TestimonyContent(props) {
     </Box>
   );
 }
-
-export default TestimonyContent;

@@ -2,10 +2,10 @@ import { Box, Typography } from '@mui/material';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function FeatureItem(props) {
-  const { imageUrl, type, price, unit, name, city, country, _id } = props;
+export default function FeatureItem(props) {
+  const { imageUrl, price, unit, name, city, country, _id } = props;
   return (
-    <Link to={`/${type.toLowerCase()}/d/${_id}`}>
+    <Link to={`/properties/${_id}`}>
       <Box className="card card-featured">
         <Box className="tag">
           <Typography variant="body2" className="font-base color-white">
@@ -28,5 +28,3 @@ function FeatureItem(props) {
     </Link>
   );
 }
-
-export default FeatureItem;

@@ -2,7 +2,7 @@ import { Box, Typography } from '@mui/material';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function CategoryItem(props) {
+export default function CategoryItem(props) {
   const { imageUrl, name, city, country, _id, isPopular } = props;
   return (
     <Box className="card">
@@ -32,5 +32,3 @@ function CategoryItem(props) {
     </Box>
   );
 }
-
-export default CategoryItem;

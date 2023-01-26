@@ -3,14 +3,14 @@ import React from 'react';
 import { Fade } from 'react-awesome-reveal';
 import CategoryList from './CategoryList';
 
-function Categories(props) {
+export default function Categories(props) {
   const { data } = props;
   return data.map((category) => (
     <Box
       key={category._id}
       className={`category-${category._id}`}
       component="section"
-      sx={{ mb: { xs: '30px', md: '50px' } }}
+      sx={{ mb: { xs: '30px', sm: '50px' } }}
     >
       <Fade triggerOnce delay={300}>
         <Typography className="font-base font-24 font-weight-semibold color-primary" variant="h4" mb="20px">
@@ -21,5 +21,3 @@ function Categories(props) {
     </Box>
   ));
 }
-
-export default Categories;

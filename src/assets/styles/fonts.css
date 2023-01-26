@@ -3,6 +3,7 @@
   font-family: 'Poppins', sans-serif;
   font-weight: var(--font-weight-300);
   font-size: var(--font-size-16);
+  letter-spacing: 0;
 }
 .MuiTypography-root.font-weight-light {
   font-weight: var(--font-weight-300);

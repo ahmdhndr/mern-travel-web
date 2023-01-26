@@ -3,7 +3,7 @@ import React from 'react';
 import { Fade, Slide } from 'react-awesome-reveal';
 import CategoryItem from './CategoryItem';
 
-function CategoryList(props) {
+export default function CategoryList(props) {
   const { items } = props;
   return (
     <>
@@ -18,7 +18,7 @@ function CategoryList(props) {
           </Fade>
         </Slide>
       )}
-      <Box className="container-grid column-4">
+      <Box className="container-grid grid-1 grid-2 grid-3 grid-4">
         {items.map((item, i) => (
           <Slide key={item._id} triggerOnce delay={300} direction="up">
             <Fade triggerOnce delay={400 * i}>
@@ -30,5 +30,3 @@ function CategoryList(props) {
     </>
   );
 }
-
-export default CategoryList;

@@ -4,6 +4,8 @@
   --clr-text: #b0b0b0;
   --clr-pink: #ff498b;
   --clr-white: #fff;
+  --clr-red: #e74c3c;
+  --clr-green: #1abc9c;
 
   --font-base: 'Poppins', sans-serif;
 
@@ -32,6 +34,7 @@ body {
   font-size: 1rem;
   line-height: normal;
   font-weight: var(--font-weight-300);
+  scroll-behavior: smooth;
 }
 
 a {
@@ -47,15 +50,6 @@ a {
 }
 .border-radius-bottom-right-lg {
   border-bottom-right-radius: var(--border-radius-100);
-}
-
-/* Grid Utilities */
-.row-span-2 {
-  grid-row: 1/3;
-}
-
-.row-auto {
-  grid-row: auto;
 }
 
 /* Image Utilities */
@@ -84,6 +78,9 @@ a {
 }
 .color-white {
   color: #fff !important;
+}
+.color-green {
+  color: var(--clr-green) !important;
 }
 
 /* Header */
@@ -147,6 +144,26 @@ a {
   color: var(--clr-secondary) !important;
 }
 
+/* Frame */
+.border-frame {
+  border: 1px solid #e5e5e5;
+}
+
+/* Icons */
+.icons-text {
+  font-weight: var(--font-weight-500);
+  margin-block-start: 10px;
+  margin-block-end: 0;
+}
+.icons-span {
+  font-weight: var(--font-weight-300);
+}
+
+/* Margin */
+.mb-24 {
+  margin-bottom: 24px;
+}
+
 /* Hero */
 .MuiBox-root.hero-content__icons-container {
   display: flex;
@@ -155,72 +172,6 @@ a {
 }
 .MuiBox-root.hero-content__icons-content {
   text-align: center;
-}
-.MuiBox-root.hero-content__icons-text {
-  font-weight: var(--font-weight-500);
-  margin-block-start: 10px;
-  margin-block-end: 0;
-}
-.MuiBox-root.hero-content__icons-span {
-  font-weight: var(--font-weight-300);
-}
-
-@media only screen and (min-width: 900px) {
-  /* Button */
-  .MuiButton-root.button {
-    width: auto;
-  }
-
-  /* Navigation */
-  .MuiBox-root.navigation {
-    width: auto;
-  }
-  .MuiList-root.navigation__menu-list {
-    display: flex;
-    /* align-items: center; */
-  }
-
-  /* Hero */
-  .MuiBox-root.hero-content__icons-content {
-    text-align: left;
-  }
-  .MuiBox-root.hero-thumb__container,
-  .MuiBox-root.testimony-thumb__container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-  .MuiBox-root.hero-thumb__frame {
-    border: 2px solid #e5e5e5;
-    position: absolute;
-    bottom: 0px;
-    right: -200px;
-    width: 520px;
-    height: 410.62px;
-  }
-  .MuiBox-root.hero-thumb__image {
-    position: absolute;
-    top: 0;
-    right: -150px;
-    height: 95%;
-  }
-
-  /* Testimony */
-  .MuiBox-root.testimony-thumb__frame {
-    position: absolute;
-    top: 0;
-    left: -80px;
-    border: 2px solid #e5e5e5;
-    width: 356px;
-    height: 486px;
-  }
-  .MuiBox-root.testimony-thumb__image {
-    position: absolute;
-    top: 40px;
-    left: -40px;
-    width: 365.98px;
-    height: 501.88px;
-  }
 }
 
 /* Card */
@@ -304,4 +255,12 @@ a {
   color: var(--clr-white);
   font-weight: var(--font-weight-300);
   font-size: var(--font-size-15);
+}
+
+/* Detail Page */
+.detail-page-description p {
+  margin: 10px 0;
+  font-family: var(--font-base);
+  font-weight: var(--font-weight-300);
+  font-size: var(--font-size-16);
 }

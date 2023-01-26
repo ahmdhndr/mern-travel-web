@@ -2,7 +2,7 @@ import { Box } from '@mui/material';
 import React from 'react';
 import { Fade } from 'react-awesome-reveal';
 
-function HeroThumb() {
+export default function HeroThumb() {
   return (
     <Box className="hero-thumb__container">
       <Fade triggerOnce>
@@ -18,5 +18,3 @@ function HeroThumb() {
     </Box>
   );
 }
-
-export default HeroThumb;

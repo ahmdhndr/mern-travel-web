@@ -1,0 +1,16 @@
+.detail-page__grid {
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  gap: 20px;
+}
+
+@media screen and (min-width: 900px) {
+  .detail-page__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+  .detail-page__title {
+    grid-column: 2/3;
+  }
+}
