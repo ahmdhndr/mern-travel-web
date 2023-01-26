@@ -2,10 +2,11 @@
 
 ![Preview Staycation](/public/staycation-preview.png?raw=true 'Staycation Website')
 
-##Description
+## Description
+
 This project is a learning material from the [Full-Stack JavaScript Developer: Website Travel](https://buildwithangga.com/kelas/full-stack-javascript-developer-website-travel?thumbnail=SfYz9toaTN.34&main_leads=topics) online class provided by the [BuildWithAngga](https://buildwithangga.com/) website. The material in this class uses the MERN stack and includes UI/UX material.
 
-##Key Points
+## Key Points
 
 - Learn to use the Reactjs library
 - Learn to make react reusable components from scratch
