@@ -10,7 +10,7 @@ export default function FeatureList(props) {
       {features.map((feature, i) => (
         <Box key={feature._id} className={i === 0 ? 'row-span-2' : 'row-auto'}>
           <Slide triggerOnce direction="up" delay={200 * i} cascade>
-            <Fade triggerOnce delay={300 * i} cascade>
+            <Fade triggerOnce delay={400} cascade>
               <FeatureItem {...feature} />
             </Fade>
           </Slide>

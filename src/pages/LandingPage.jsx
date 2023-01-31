@@ -14,7 +14,7 @@ export default function LandingPage() {
       <Helmet>
         <title>Staycation | Home</title>
       </Helmet>
-      <Container sx={{ overflowX: 'hidden' }}>
+      <Container>
         <Hero refMostPicked={refMostPickedTop} data={landingPageData.hero} />
         <MostPicked data={landingPageData.mostPicked} refMostPickedTop={refMostPickedTop} />
         <Categories data={landingPageData.categories} />

@@ -7,6 +7,7 @@ import './index.css';
 export default function DetailPageTitle({ data, breadcrumb }) {
   return (
     <Box
+      component="section"
       className="detail-page__head"
       sx={{
         mt: { xs: '30px', sm: '50px' },

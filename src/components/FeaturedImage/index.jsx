@@ -4,7 +4,7 @@ import { Fade, Slide } from 'react-awesome-reveal';
 
 export default function FeaturedImage({ data }) {
   return (
-    <Box className="container-grid grid-1 grid-2 gap-10" sx={{ mb: { xs: '30px', sm: '50px' } }}>
+    <Box component="section" className="container-grid grid-1 grid-2 gap-10" sx={{ mb: { xs: '30px', sm: '50px' } }}>
       {data.map((item, i) => (
         <Box key={item._id} className={i === 0 ? 'row-span-2' : 'row-auto'}>
           <Slide direction="up" triggerOnce delay={200 * i} style={{ height: '100%' }}>

@@ -20,7 +20,7 @@ export default function HeroContent(props) {
         <Typography
           variant="h3"
           className="font-base font-42 font-weight-bold color-primary"
-          sx={{ textAlign: { xs: 'center', sm: 'left' } }}
+          sx={{ textAlign: { xs: 'center', sm: 'left' }, lineHeight: 1.5 }}
         >
           Forget Busy Work, <br />
           Start Next Vacation
@@ -39,7 +39,9 @@ export default function HeroContent(props) {
         >
           We provide what you need to enjoy your holiday with family. Time to make another memorable moments.
         </Typography>
-        <Button onClick={showMostPicked}>Show Me Now</Button>
+        <Button type="button" onClick={showMostPicked} className="btn-primary" style={{ marginBottom: '82px' }}>
+          Show Me Now
+        </Button>
         <HeroContentIcons data={data} />
       </Fade>
     </Box>

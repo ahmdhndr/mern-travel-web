@@ -27,7 +27,7 @@
     border: 2px solid #e5e5e5;
     position: absolute;
     bottom: 0px;
-    right: -200px;
+    right: -250px;
     width: 520px;
     height: 410.62px;
   }
@@ -42,7 +42,7 @@
   .MuiBox-root.testimony-thumb__frame {
     position: absolute;
     top: 0;
-    left: -80px;
+    left: -110px;
     border: 2px solid #e5e5e5;
     width: 356px;
     height: 486px;
@@ -50,7 +50,7 @@
   .MuiBox-root.testimony-thumb__image {
     position: absolute;
     top: 40px;
-    left: -40px;
+    left: -70px;
     width: 365.98px;
     height: 501.88px;
   }
@@ -63,7 +63,8 @@
   }
   .MuiBox-root.hero-thumb__image {
     right: 40px;
-    height: auto;
+    height: 410px;
+    width: 520px;
   }
 
   /* Testimony */

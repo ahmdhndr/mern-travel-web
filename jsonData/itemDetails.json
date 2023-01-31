@@ -102,10 +102,10 @@
   "categories": [
     {
       "_id": "asd1293uasdads1",
-      "name": "House with beauty backyard",
+      "name": "Treasure to Choose",
       "items": [
         {
-          "_id": "asd1293uasdads1",
+          "_id": "asd1293uasdads123",
           "name": "PSW Antasari",
           "imageUrl": "/images/treasure-1.jpg",
           "country": "South Korea",
@@ -113,7 +113,7 @@
           "isPopular": false
         },
         {
-          "_id": "asd1293uasdads1",
+          "_id": "asd1293uasdads124",
           "name": "Kuretakeso",
           "imageUrl": "/images/treasure-2.jpg",
           "country": "South Korea",
@@ -121,7 +121,7 @@
           "isPopular": false
         },
         {
-          "_id": "asd1293uasdads1",
+          "_id": "asd1293uasdads125",
           "name": "Arya Duta",
           "imageUrl": "/images/treasure-3.jpg",
           "country": "South Korea",
@@ -129,7 +129,7 @@
           "isPopular": true
         },
         {
-          "_id": "asd1293uasdads1",
+          "_id": "asd1293uasdads126",
           "name": "Grand Dhika",
           "imageUrl": "/images/treasure-4.jpg",
           "country": "South Korea",
@@ -140,7 +140,7 @@
     }
   ],
   "testimonial": {
-    "_id": "asd1293uasdads1",
+    "_id": "asd1293uasdads121",
     "imageUrl": "/images/testimonial-detailspage.jpg",
     "name": "Happy Family",
     "rate": 4.25,

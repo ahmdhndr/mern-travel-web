@@ -6,15 +6,34 @@ import BrandIcon from '../BrandIcon';
 import DrawerComponent from './Drawer';
 import ListComponent from './ListComponent';
 
-export default function Header() {
+export default function Header(props) {
   const theme = useTheme();
   const [openDrawer, setOpenDrawer] = useState(false);
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
+  if (props.isCentered) {
+    return (
+      <>
+        <Container>
+          <AppBar className="header-container" sx={{ p: '24px 0', textAlign: 'center' }}>
+            <Fade triggerOnce>
+              <Box>
+                <BrandIcon />
+              </Box>
+            </Fade>
+          </AppBar>
+        </Container>
+        <Slide triggerOnce>
+          <Divider />
+        </Slide>
+      </>
+    );
+  }
+
   return (
     <>
       <Container>
-        <AppBar className="header-container">
+        <AppBar className="header-container" sx={{ p: '8px 0' }}>
           <Toolbar className="toolbar">
             <Fade triggerOnce>
               <Box>

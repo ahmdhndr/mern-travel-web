@@ -46,7 +46,7 @@ export default function TestimonyContent(props) {
           {', '}
           {data.familyOccupation}
         </Typography>
-        <Button style={{ marginBottom: 0 }} onClick={() => console.log('clicked')}>
+        <Button className="btn-primary" onClick={() => console.log('clicked')}>
           Read Their Story
         </Button>
       </Slide>

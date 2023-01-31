@@ -6,6 +6,8 @@
   --clr-white: #fff;
   --clr-red: #e74c3c;
   --clr-green: #1abc9c;
+  --clr-stepper: #e5e5e5;
+  --clr-stepper-text: #898989;
 
   --font-base: 'Poppins', sans-serif;
 
@@ -26,6 +28,8 @@
 
   --border-radius-base: 15px;
   --border-radius-100: 100px;
+
+  --size: 50px;
 }
 
 body {
@@ -85,7 +89,6 @@ a {
 
 /* Header */
 .MuiAppBar-root.header-container {
-  padding: 8px 0;
   background-color: transparent;
   position: static;
   box-shadow: none;
@@ -109,19 +112,35 @@ a {
 }
 
 /* Button */
+.MuiButton-root.button a {
+  color: #b3b3b3;
+}
+.MuiButton-root.button:is(.btn-primary) a {
+  color: var(--clr-white);
+}
 .MuiButton-root.button {
   border-radius: 4px;
   font-family: var(--font-base);
-  font-weight: var(--font-weight-500);
+  font-weight: var(--font-weight-300);
   font-size: var(--font-size-18);
-  padding: 12px 35px;
-  margin-bottom: 82px;
+  padding: 18px 120px;
+  height: 50px;
   text-transform: none;
   width: 100%;
-  box-shadow: 0px 8px 15px rgba(50, 82, 223, 0.3);
+  background-color: #f5f6f8;
+  color: #b3b3b3;
+  margin-bottom: 50px;
 }
-.MuiButton-root.button:hover,
-.MuiButton-root.button:active {
+.MuiButton-root.button:is(.btn-primary) {
+  font-weight: var(--font-weight-500);
+  background-color: var(--clr-secondary);
+  color: var(--clr-white);
+  box-shadow: 0px 8px 15px rgba(50, 82, 223, 0.3);
+  padding: 12px 35px;
+  margin-bottom: 0;
+}
+.MuiButton-root.button:is(.btn-primary):hover,
+.MuiButton-root.button:is(.btn-primary):active {
   box-shadow: 0 8px 15px rgba(50, 82, 223, 0.3);
 }
 
@@ -195,6 +214,7 @@ a {
 .card .img-wrapper {
   margin: 0;
   height: 100%;
+  width: auto;
   border-radius: 15px;
   overflow: hidden;
 }

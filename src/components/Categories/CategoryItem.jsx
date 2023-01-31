@@ -6,7 +6,7 @@ export default function CategoryItem(props) {
   const { imageUrl, name, city, country, _id, isPopular } = props;
   return (
     <Box className="card">
-      <Link to={`/places/d/${_id}`}>
+      <Link to={`/properties/${_id}`}>
         {isPopular && (
           <Box className="tag">
             <Typography variant="body2" className="font-base color-white">
